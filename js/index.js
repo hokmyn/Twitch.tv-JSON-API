@@ -32,6 +32,7 @@
 				$.each( streamers, function( index, value ) {						
 						$( "#streamers" ).append( "<div class='userInfo row' id='streamer_" + index + "'><div class='col-lg-2'><img id='img_" + index + "' class='userImg'></div><div class='col-lg-8'><div class='row nickname'><a  target='_blank' id='userLink_" + index + "' href='https://www.twitch.tv/" + value + "'>" + value + "</a></div><div class='row details'><span id='detail_" + index + "'></span></div></div><div class='col-lg-2 userStatus'><span id='status_" + index + "'></span></div></div>");
 						$.getJSON( "https://wind-bow.gomix.me/twitch-api/streams/" + value + "?callback=?", function( data ) {
+							console.log(data);
 							var streamer = "#streamer_" + index;
 							var status = "#status_" + index;
 							var img = "#img_" + index;
