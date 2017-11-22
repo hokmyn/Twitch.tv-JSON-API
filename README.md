@@ -1,1 +1,2 @@
-# Twitch.tv-JSON-API
+# FreeCodeCamp's project
+## Twitch.tv-JSON-API
